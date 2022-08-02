@@ -15,7 +15,7 @@ Your front-end opens a long-lasting, bi-directional communication with your back
 
 This is the only standard and official solution supported by AWS.
 
-Best use cases: Google Wave type of applications, Chat Applications, anything that needs bi-directional communication.
+Best use cases: Google Wave type of applications, chat Applications, anything that needs bi-directional communication.
 
 Example Architecture:
 
