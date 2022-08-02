@@ -11,7 +11,7 @@ Example Architecture:
 
 ## WebSocket
 
-Your front-end opens a long-lasting, bi-directional communication with your back-end through a WebSocket protocol. Thus, the back can push a message as soon as necessary and vice versa. Latency is decreased, as the data will be exchanged exactly when it's available. Bandwidth is decreased, as data will only be exchanged when it's available.
+Your front-end opens a long-lasting, bi-directional communication with your back-end through a WebSocket protocol. Thus, the back can push a message as soon as necessary and vice versa. Latency and Bandwidth are decreased, as the data will be exchanged exactly when it's available.
 
 The only standard and official solution supported by AWS.
 
