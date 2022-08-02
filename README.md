@@ -1,5 +1,5 @@
 # Asyncronous Client Server Interaction
-This guide has the objective to show the difference between the methods of asynchronous communication between client and server, as well to show how to implement them.
+This guide has the objective to show the difference between the most commom methods of asynchronous communication between client and server, as well to show how to implement them.
 
 ## Polling
 
@@ -7,7 +7,7 @@ Example Architecture:
 
 ## WebSocket
 
-Bidirecional communication.
+Your front-end opens a long-lasting, bi-directional communication with your back-end through a WebSocket protocol. Thus, the back can push a message as soon as necessary and vice versa.
 
 The only standard and official solution supported by AWS.
 
@@ -17,7 +17,7 @@ Example Architecture:
 
 ## Server-Sent Events
 
-Unidirecional communication, from Server to Client. If you want Client to Server communication, you need do make a separated POST request.
+Your front-end opens a long-lasting, uni-directional (from server to client) communication from your back-end through the HTTP protocol. Here as well, the back-end can push a message as soon as necessary. If you want client to server communication, you need do make a separated POST request.
 
 Best use cases: Stock prices updates, notifications, anything that needs unidirecional communication.
 
