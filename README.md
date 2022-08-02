@@ -1,5 +1,5 @@
 # Asyncronous Client Server Interaction
-This guide has the objective to show the difference between the most commom methods of asynchronous communication between client and server, as well to show how to implement them.
+This guide has the objective to show the difference between the most common methods of asynchronous communication between client and server, as well to show how to implement them.
 
 ## Polling
 
