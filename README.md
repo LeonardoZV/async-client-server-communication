@@ -13,7 +13,7 @@ Example Architecture:
 
 Your front-end opens a long-lasting, bi-directional communication with your back-end through a WebSocket protocol. Thus, the back can push a message as soon as necessary and vice versa. Latency and Bandwidth are decreased, as the data will be exchanged exactly when it's available.
 
-The only standard and official solution supported by AWS.
+This is the only standard and official solution supported by AWS.
 
 Best use cases: Google Wave type of applications, Chat Applications, anything that needs bi-directional communication.
 
