@@ -6,6 +6,7 @@ This guide has the objective to show the difference between the methods of async
 ## WebSocket
 
 Bidirecional communication.
+The only standard and official solution supported by AWS.
 
 Best use cases: Google Wave, Chat Applications, anything that needs bidirecional communication.
 
