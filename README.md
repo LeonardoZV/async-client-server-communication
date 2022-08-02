@@ -11,7 +11,7 @@ Bidirecional communication.
 
 The only standard and official solution supported by AWS.
 
-Best use cases: Google Wave type of application, Chat Applications, anything that needs bidirecional communication.
+Best use cases: Google Wave type of applications, Chat Applications, anything that needs bidirecional communication.
 
 Example Architecture:
 
