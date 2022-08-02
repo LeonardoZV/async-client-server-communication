@@ -4,7 +4,11 @@
 
 ## WebSocket
 
+Bidirecional communication.
+
 ## Server-Sent Events
+
+Unidirecional communication, from Server to Client. If you want Client to Server communication, you need do make a separated POST request.
 
 ## HTTP2 Push :skull:	
 
