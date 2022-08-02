@@ -21,7 +21,7 @@ Example Architecture:
 
 ## Server-Sent Events
 
-Your front-end opens a long-lasting, uni-directional (from server to client) communication from your back-end through the HTTP protocol. Here as well, the back-end can push a message as soon as necessary. If you want client to server communication, you'll need do make a separated POST request.
+Your front-end opens a long-lasting, uni-directional communication from your back-end to your front-end through the HTTP protocol. Here as well, the back-end can push a message as soon as necessary. If you want client to server communication, you'll need do make a separated POST request.
 
 Best use cases: Stock prices updates, notifications, anything that needs uni-directional communication.
 
