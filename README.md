@@ -3,7 +3,7 @@ This guide has the objective to show the difference between the most common meth
 
 ## (Long) Polling
 
-Your front-end has the responsibility of regularly asking your back-end if there is any fresh data. Hence the front will make the same call every few seconds/minutes. Sometimes one of those calls will have a fresh data to handle.
+Your front-end has the responsibility of regularly asking your back-end if there is any fresh data. Hence the front will make the same call every few seconds/minutes. Sometimes one of those calls will have a fresh data to handle. Latency is increased, as the front-end has to wait for the next pool. Bandwidth is increased, as the front-end could be requesting the server when there is no data to return.
 
 Long polling is different in the fact that the request is kept open by the server as long as possible until it eventually returns a fresh data or reaches a timeout.
 
@@ -11,7 +11,7 @@ Example Architecture:
 
 ## WebSocket
 
-Your front-end opens a long-lasting, bi-directional communication with your back-end through a WebSocket protocol. Thus, the back can push a message as soon as necessary and vice versa.
+Your front-end opens a long-lasting, bi-directional communication with your back-end through a WebSocket protocol. Thus, the back can push a message as soon as necessary and vice versa. Latency is decreased, as the data will be exchanged exactly when it's available. Bandwidth is decreased, as data will only be exchanged when it's available.
 
 The only standard and official solution supported by AWS.
 
