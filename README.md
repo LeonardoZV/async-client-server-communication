@@ -1,4 +1,4 @@
-# async-client-server-interaction
+# Asyncronous Client Server Interaction
 
 ## Polling
 
@@ -6,9 +6,13 @@
 
 Bidirecional communication.
 
+Best use cases: Google Wave, Chat Applications, anything that needs bidirecional communication.
+
 ## Server-Sent Events
 
 Unidirecional communication, from Server to Client. If you want Client to Server communication, you need do make a separated POST request.
+
+Best use cases: Stock prices updates, notifications, anything that needs unidirecional communication.
 
 ## HTTP2 Push :skull:	
 
