@@ -1,7 +1,11 @@
 # Asyncronous Client Server Interaction
 This guide has the objective to show the difference between the most common methods of asynchronous communication between client and server, as well to show how to implement them.
 
-## Polling
+## (Long) Polling
+
+Your front-end has the responsibility of regularly asking your back-end if there is any fresh data. Hence the front will make the same call every few seconds/minutes. Sometimes one of those calls will have a fresh data to handle.
+
+Long polling is different in the fact that the request is kept open by the server as long as possible until it eventually returns a fresh data or reaches a timeout.
 
 Example Architecture:
 
@@ -17,7 +21,7 @@ Example Architecture:
 
 ## Server-Sent Events
 
-Your front-end opens a long-lasting, uni-directional (from server to client) communication from your back-end through the HTTP protocol. Here as well, the back-end can push a message as soon as necessary. If you want client to server communication, you need do make a separated POST request.
+Your front-end opens a long-lasting, uni-directional (from server to client) communication from your back-end through the HTTP protocol. Here as well, the back-end can push a message as soon as necessary. If you want client to server communication, you'll need do make a separated POST request.
 
 Best use cases: Stock prices updates, notifications, anything that needs unidirecional communication.
 
