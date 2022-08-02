@@ -3,7 +3,7 @@ This guide has the objective to show the difference between the most common meth
 
 ## (Long) Polling
 
-Your front-end has the responsibility of regularly asking your back-end if there is any fresh data. Hence the front will make the same call every few seconds/minutes. Sometimes one of those calls will have a fresh data to handle. Latency is increased, as the front-end has to wait for the next pool. Bandwidth is increased, as the front-end creates lots of requests (which means data being transfered) to the back-end even when there is no data for the back-end to return, which is waste.
+Your front-end has the responsibility of regularly asking your back-end if there is any fresh data. Hence the front will make the same call every few seconds/minutes. Sometimes one of those calls will have a fresh data to handle. Latency is increased, as the front-end has to wait for the next pool to get the most updated data. Bandwidth is increased, as the front-end creates lots of requests (which means data being transfered) to the back-end even when there is no data for the back-end to return, which is waste.
 
 Long polling is different in the fact that the request is kept open by the server as long as possible until it eventually returns a fresh data or reaches a timeout.
 
