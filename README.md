@@ -15,7 +15,7 @@ Your front-end opens a long-lasting, bi-directional communication with your back
 
 The only standard and official solution supported by AWS.
 
-Best use cases: Google Wave type of applications, Chat Applications, anything that needs bidirecional communication.
+Best use cases: Google Wave type of applications, Chat Applications, anything that needs bi-directional communication.
 
 Example Architecture:
 
@@ -23,7 +23,7 @@ Example Architecture:
 
 Your front-end opens a long-lasting, uni-directional (from server to client) communication from your back-end through the HTTP protocol. Here as well, the back-end can push a message as soon as necessary. If you want client to server communication, you'll need do make a separated POST request.
 
-Best use cases: Stock prices updates, notifications, anything that needs unidirecional communication.
+Best use cases: Stock prices updates, notifications, anything that needs uni-directional communication.
 
 Example Architecture:
 
