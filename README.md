@@ -15,7 +15,7 @@ Your front-end opens a long-lasting, bi-directional communication with your back
 
 This is the only standard and official solution supported by AWS.
 
-Best use cases: Google Wave type of applications, chat Applications, anything that needs bi-directional communication.
+Best use cases: Google Wave type of applications, chat applications, anything that needs bi-directional communication.
 
 Example Architecture:
 
@@ -29,6 +29,6 @@ Example Architecture:
 
 ## HTTP2 Push :skull:	
 
-Developers from Chromium removed the support of this feature. As Chrome has 70% of market share (2022), they are effectively killing HTTP2 Push. As HTTP2 Push is not mandatory, Chromium keeps being HTTP2 compliant.
+Developers from Chromium removed the support for this feature. As Chrome has 70% of market share (2022), they are effectively killing HTTP2 Push. As HTTP2 Push is not mandatory, Chromium keeps being HTTP2 compliant.
 
 Chromium Team announcement (2021): https://groups.google.com/a/chromium.org/g/blink-dev/c/K3rYLvmQUBY/m/0o4J1GEjAgAJ
