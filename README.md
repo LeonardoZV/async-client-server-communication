@@ -1,7 +1,7 @@
 # Asyncronous Communication Methods
 This guide has the objective to explain the differences between the most common methods of asynchronous communication, as well to show how to implement them.
 
-## (Long) Polling (Server-to-Browser Comunication)
+## (Long) Polling (Server-to-Browser or Server-to-Server Comunication)
 
 Your front-end has the responsibility of regularly asking your back-end if there is any fresh data. Hence the front will make the same call every few seconds/minutes. Sometimes one of those calls will have a fresh data to handle.
 
