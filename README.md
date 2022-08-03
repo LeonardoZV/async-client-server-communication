@@ -13,7 +13,7 @@ Long polling is different in the fact that the request is kept open by the serve
 
 Example Architecture:
 
-## Server-Sent Events
+## Server-Sent Events (Server to Client Communication)
 
 Your front-end opens a long-lasting, uni-directional communication from your back-end to your front-end through the HTTP protocol. Here as well, the back-end can push a message as soon as necessary. If you want client to server communication, you'll need do make a separated POST request.
 
@@ -23,7 +23,7 @@ Best use cases: Stock prices updates, notifications, anything that needs uni-dir
 
 Example Architecture:
 
-## WebSocket
+## WebSocket (Server to Client and Client to Server Communication)
 
 Your front-end opens a long-lasting, bi-directional communication with your back-end through a WebSocket protocol. Thus, the back can push a message as soon as necessary and vice versa. Latency and Bandwidth are decreased, as the data will be exchanged exactly when it's available.
 
@@ -35,8 +35,10 @@ Best use cases: Google Wave type of applications, chat applications, anything th
 
 Example Architecture:
 
-## HTTP2 Push :skull:	
+## HTTP2 Push (Server to Client Communication) :skull:	
 
 Developers from Chromium removed the support for this feature. As Chrome has 70% of market share (2022), they are effectively killing HTTP2 Push. As HTTP2 Push is not mandatory, Chromium keeps being HTTP2 compliant.
 
 Chromium Team announcement (2021): https://groups.google.com/a/chromium.org/g/blink-dev/c/K3rYLvmQUBY/m/0o4J1GEjAgAJ
+
+## Bonus: Webhooks (Server to Server Communication)
