@@ -49,6 +49,10 @@ Example Architecture:
 
 ![example-architecture](./webhooks/images/example-architecture.drawio.png)
 
+1. Source Server publishes the message in a AWS SNS topic.
+2. AWS SNS pushes the message to the destination server by doing a HTTP/S POST.
+3. In case of a failure to send the message to the destination and after all retries, the message is published in a SQS queue for the desired error handling.
+
 ## ~~HTTP/2 Push (Server-to-Browser Communication)~~ :skull:	
 
 Developers from Chromium [removed](https://groups.google.com/a/chromium.org/g/blink-dev/c/K3rYLvmQUBY/m/0o4J1GEjAgAJ) in 2021 the support for this feature due to low usage and high maintenance cost. As Chrome has 70% of market share (2022), they are effectively killing HTTP/2 Push. As HTTP/2 Push is not mandatory, Chromium keeps being HTTP/2 compliant.
