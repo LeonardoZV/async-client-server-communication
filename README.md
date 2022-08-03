@@ -33,7 +33,7 @@ Your front-end opens a long-lasting, bi-directional communication with your back
 
 Best use cases: Google Wave type of applications, chat applications, anything that needs bi-directional communication.
 
-Performance: Bandwidth and Latency are minimal, as only the necessary data will be exchanged and exactly when it's available. As your server could have thousands or millions of open sockets, that could be a problem, but open sockets don't impact too much on CPU usage, being the Memory the main resource used. [Here](https://stackoverflow.com/questions/17448061/how-many-system-resources-will-be-held-for-keeping-1-000-000-websocket-open) we have a report of a modest server (8 vCPU and 68.4 GiB) taking up to 500k open socket connections.
+Performance: Bandwidth and Latency are minimal, as only the necessary data will be exchanged and exactly when it's necessary. As your server could have thousands or even millions of open sockets, that could be a problem, but open sockets don't impact too much on CPU usage, being the Memory the main resource used. [Here](https://stackoverflow.com/questions/17448061/how-many-system-resources-will-be-held-for-keeping-1-000-000-websocket-open) we have a report of a modest server (8 vCPU and 68.4 GiB) taking up to 500k open socket connections.
 
 Example Architecture:
 
