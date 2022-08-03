@@ -23,7 +23,7 @@ Best use cases: Stock prices updates, notifications, anything that needs uni-dir
 
 Example Architecture:
 
-## WebSocket (Server-to-Browser or Browser-to-Server Communication)
+## WebSocket (Server-to-Browser and Browser-to-Server Communication)
 
 Your front-end opens a long-lasting, bi-directional communication with your back-end through a WebSocket protocol. Thus, the back can push a message as soon as necessary and vice versa. Latency and Bandwidth are decreased, as the data will be exchanged exactly when it's available.
 
