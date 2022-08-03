@@ -55,6 +55,12 @@ Example Architecture:
 2. AWS SNS pushes the message to the destination by using one of the fanout methods, like HTTP/S POST.
 3. In case of a failure and after all retries, the message is published in a SQS queue for the desired error handling.
 
+## Message Brokers (Server to Server Communication)
+
+In a uni-directional communication, a source server notifies a destination server that new events happened, as soon as necessary and generally through a topic or queue hosted in a message broker. 
+
+Example Architecture:
+
 ## ~~HTTP/2 Push (Server-to-Browser Communication)~~ :skull:	
 
 Developers from Chromium [removed](https://groups.google.com/a/chromium.org/g/blink-dev/c/K3rYLvmQUBY/m/0o4J1GEjAgAJ) in 2021 the support for this feature due to low usage and high maintenance cost. As Chrome is based on Chromium and it has 70% of market share (2022), they are effectively killing HTTP/2 Push. As HTTP/2 Push is not mandatory, Chromium keeps being HTTP/2 compliant.
