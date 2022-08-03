@@ -45,6 +45,8 @@ Example Architecture:
 
 ## Webhooks (Server to Server Communication)
 
+A Source Server notifies a Destination Server, through a HTTP POST request, of new events in a uni-directional communication as soon as necessary. Before the notification can be made, the Source Server must be configured with the callback URL (the URL of the destination server) through a interface ou API. 
+
 Example Architecture:
 
 ![example-architecture](./webhooks/images/example-architecture.drawio.png)
