@@ -54,5 +54,7 @@ Developers from Chromium [removed](https://groups.google.com/a/chromium.org/g/bl
 ## Bibliography
 
 https://medium.com/serverless-transformation/asynchronous-client-interaction-in-aws-serverless-polling-websocket-server-sent-events-or-acf10167cc67
+
 https://aws.amazon.com/pt/blogs/compute/from-poll-to-push-transform-apis-using-amazon-api-gateway-rest-apis-and-websockets/
+
 http://www.diva-portal.se/smash/get/diva2:1133465/FULLTEXT01.pdf
