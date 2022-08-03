@@ -11,7 +11,7 @@ Long polling is different in the fact that the request is kept open by the serve
 
 ![2](./polling/images/2.png)
 
-Performance: Bandwidth could be big, as the front-end creates lots of requests to the back-end even when the back-end could have no new data to return, which is waste of resources. Latency too could be big even with Long Polling, as the front-end has to wait for the next pool to get the most updated data. 
+Performance: Bandwidth use could be big, as the front-end creates lots of requests to the back-end even when the back-end could have no new data to return, which is waste of resources. Latency too could be big even with Long Polling, as the front-end has to wait for the next pool to get the most updated data. 
 
 Example Architecture:
 
