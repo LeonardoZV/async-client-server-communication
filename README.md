@@ -47,7 +47,7 @@ Example Architecture:
 
 Example Architecture:
 
-![example-architecture](./websocket/images/example-architecture.drawio.png)
+![example-architecture](./webrooks/images/example-architecture.drawio.png)
 
 ## ~~HTTP/2 Push (Server-to-Browser Communication)~~ :skull:	
 
