@@ -50,7 +50,7 @@ Example Architecture:
 ![example-architecture](./webhooks/images/example-architecture.drawio.png)
 
 1. Source Server publishes the message in a AWS SNS topic.
-2. AWS SNS pushes the message to the destination by using one of the fanout methods (HTTP/S POST is one of them).
+2. AWS SNS pushes the message to the destination by using one of the fanout methods, like HTTP/S POST.
 3. In case of a failure and after all retries, the message is published in a SQS queue for the desired error handling.
 
 ## ~~HTTP/2 Push (Server-to-Browser Communication)~~ :skull:	
