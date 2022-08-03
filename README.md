@@ -37,9 +37,9 @@ Performance: As your server could have thousands or millions of open sockets, th
 
 Example Architecture:
 
-## HTTP2 Push (Server-to-Browser Communication) :skull:	
+## HTTP/2 Push (Server-to-Browser Communication) :skull:	
 
-Developers from Chromium removed the support for this feature. As Chrome has 70% of market share (2022), they are effectively killing HTTP2 Push. As HTTP2 Push is not mandatory, Chromium keeps being HTTP2 compliant.
+Developers from Chromium removed the support for this feature due to low usage and high maintenance cost. As Chrome has 70% of market share (2022), they are effectively killing HTTP/2 Push. As HTTP/2 Push is not mandatory, Chromium keeps being HTTP/2 compliant.
 
 Chromium Team announcement (2021): https://groups.google.com/a/chromium.org/g/blink-dev/c/K3rYLvmQUBY/m/0o4J1GEjAgAJ
 
