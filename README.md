@@ -55,7 +55,7 @@ Example Architecture:
 2. AWS SNS pushes the message to the destination by using one of the fanout methods, like HTTP/S POST.
 3. In case of a failure and after all retries, the message is published in a SQS queue for the desired error handling.
 
-## Message Brokers (Server to Server Communication)
+## Publish/Subscribe Messaging (Server to Server Communication)
 
 In a uni-directional communication, a source server notifies a destination server that new events happened, as soon as necessary and generally through a topic or queue hosted in a message broker. 
 
