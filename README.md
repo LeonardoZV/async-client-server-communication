@@ -1,7 +1,7 @@
-# Asyncronous Client Server Communication
+# Asyncronous Communication Methods
 This guide has the objective to show the difference between the most common methods of asynchronous communication between client and server, as well to show how to implement them.
 
-## (Long) Polling
+## (Long) Polling (Server-to-Browser Comunication)
 
 Your front-end has the responsibility of regularly asking your back-end if there is any fresh data. Hence the front will make the same call every few seconds/minutes. Sometimes one of those calls will have a fresh data to handle. Latency is increased, as the front-end has to wait for the next pool to get the most updated data. Bandwidth is increased, as the front-end creates lots of requests (requests contain data) to the back-end even when there is no data for the back-end to return, which is waste.
 
@@ -13,9 +13,9 @@ Long polling is different in the fact that the request is kept open by the serve
 
 Example Architecture:
 
-## Server-Sent Events (Server to Client Communication)
+## Server-Sent Events (Server-to-Browser Communication)
 
-Your front-end opens a long-lasting, uni-directional communication from your back-end to your front-end through the HTTP protocol. Here as well, the back-end can push a message as soon as necessary. If you want client to server communication, you'll need do make a separated POST request.
+Your front-end opens a long-lasting, uni-directional communication from your back-end to your front-end through the HTTP protocol. Here as well, the back-end can push a message as soon as necessary. If you want browser to server communication, you'll need do make a separated POST request.
 
 ![1](./server-sent-events/images/1.png)
 
@@ -23,7 +23,7 @@ Best use cases: Stock prices updates, notifications, anything that needs uni-dir
 
 Example Architecture:
 
-## WebSocket (Server to Client and Client to Server Communication)
+## WebSocket (Server-to-Browser and Browser-to-Server Communication)
 
 Your front-end opens a long-lasting, bi-directional communication with your back-end through a WebSocket protocol. Thus, the back can push a message as soon as necessary and vice versa. Latency and Bandwidth are decreased, as the data will be exchanged exactly when it's available.
 
@@ -35,10 +35,10 @@ Best use cases: Google Wave type of applications, chat applications, anything th
 
 Example Architecture:
 
-## HTTP2 Push (Server to Client Communication) :skull:	
+## HTTP2 Push (Server-to-Browser Communication) :skull:	
 
 Developers from Chromium removed the support for this feature. As Chrome has 70% of market share (2022), they are effectively killing HTTP2 Push. As HTTP2 Push is not mandatory, Chromium keeps being HTTP2 compliant.
 
 Chromium Team announcement (2021): https://groups.google.com/a/chromium.org/g/blink-dev/c/K3rYLvmQUBY/m/0o4J1GEjAgAJ
 
-## Bonus: Webhooks (Server to Server Communication)
+## Webhooks (Server to Server Communication)
