@@ -1,5 +1,5 @@
 # Asyncronous Communication Methods
-This guide has the objective to explain the differences between the most common methods of asynchronous communication, as well to show how to implement them.
+This guide has the objective to explain the most common methods of asynchronous communication and how to implement them.
 
 ## (Long) Polling (Server-to-Browser or Server-to-Server Comunication)
 
