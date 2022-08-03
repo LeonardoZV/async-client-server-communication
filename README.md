@@ -3,13 +3,15 @@ This guide has the objective to explain the differences between the most common 
 
 ## (Long) Polling (Server-to-Browser Comunication)
 
-Your front-end has the responsibility of regularly asking your back-end if there is any fresh data. Hence the front will make the same call every few seconds/minutes. Sometimes one of those calls will have a fresh data to handle. Latency is increased, as the front-end has to wait for the next pool to get the most updated data. Bandwidth is increased, as the front-end creates lots of requests to the back-end even when the back-end could have no new data to return, which is waste of resources.
+Your front-end has the responsibility of regularly asking your back-end if there is any fresh data. Hence the front will make the same call every few seconds/minutes. Sometimes one of those calls will have a fresh data to handle.
 
 ![1](./polling/images/1.png)
 
 Long polling is different in the fact that the request is kept open by the server as long as possible until it eventually returns a fresh data or reaches a timeout.
 
 ![2](./polling/images/2.png)
+
+Performance: Bandwidth could be big, as the front-end creates lots of requests to the back-end even when the back-end could have no new data to return, which is waste of resources. Latency too could be big even with Long Polling, as the front-end has to wait for the next pool to get the most updated data. 
 
 Example Architecture:
 
@@ -25,7 +27,7 @@ Example Architecture:
 
 ## WebSocket (Server-to-Browser and Browser-to-Server Communication)
 
-Your front-end opens a long-lasting, bi-directional communication with your back-end through a WebSocket protocol. Thus, the back can push a message as soon as necessary and vice versa. Latency and Bandwidth are decreased, as the data will be exchanged exactly when it's available.
+Your front-end opens a long-lasting, bi-directional communication with your back-end through a WebSocket protocol. Thus, the back can push a message as soon as necessary and vice versa.
 
 This is the only standard and official solution supported by AWS.
 
@@ -33,7 +35,7 @@ This is the only standard and official solution supported by AWS.
 
 Best use cases: Google Wave type of applications, chat applications, anything that needs bi-directional communication.
 
-Performance: As your server could have thousands or millions of open sockets, that could be a problem, but open sockets don't impact too much on CPU usage, being the Memory the main resource used. [Here](https://stackoverflow.com/questions/17448061/how-many-system-resources-will-be-held-for-keeping-1-000-000-websocket-open) we have a report of a modest server (8 vCPU and 68.4 GiB) taking up to 500k open socket connections.
+Performance: Bandwidth and Latency are minimal, as only the necessary data will be exchanged and exactly when it's available. As your server could have thousands or millions of open sockets, that could be a problem, but open sockets don't impact too much on CPU usage, being the Memory the main resource used. [Here](https://stackoverflow.com/questions/17448061/how-many-system-resources-will-be-held-for-keeping-1-000-000-websocket-open) we have a report of a modest server (8 vCPU and 68.4 GiB) taking up to 500k open socket connections.
 
 Example Architecture:
 
