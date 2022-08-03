@@ -55,7 +55,7 @@ Example Architecture:
 2. AWS SNS pushes the message to the destination by using one of the fanout methods, like HTTP/S POST.
 3. In case of a failure and after all retries, the message is published in a SQS queue for the desired error handling.
 
-## Message Broker (Server to Server Communication)
+## Pub/Sub Pattern through a Message Broker (Server to Server Communication)
 
 In a uni-directional communication, a producer publishes a message in a topic or queue hosted in a message broker, and one or many consumer services subscribe to this topic or queue. Depending on the message broker used, a push or pull strategy is used. Kafka for example uses a pull strategy, meaning that the consumer service makes requests periodically to the message brokers requesting new data, which is very similar do the Polling method explained before. RabbitMQ for example uses a push strategy, meaning that RabbitMQ calls the consumer service when new data is available, which is very similar do the Webhook method explained before.
 
