@@ -1,5 +1,5 @@
 # Asyncronous Communication Methods
-This guide has the objective to show the difference between the most common methods of asynchronous communication between client and server, as well to show how to implement them.
+This guide has the objective to show the difference between the most common methods of asynchronous communication, as well to show how to implement them.
 
 ## (Long) Polling (Server-to-Browser Comunication)
 
@@ -37,10 +37,18 @@ Performance: As your server could have thousands or millions of open sockets, th
 
 Example Architecture:
 
-## HTTP/2 Push (Server-to-Browser Communication) :skull:	
+![2](./websocket/images/2.png)
+
+1. Start and keep track of the live WebSocket connection.
+2. An event, like a SaaS hook, triggers a DB update.
+3. A DynamoDB event then triggering a Lambda to notify the front-end of the updated data.
+
+## Webhooks (Server to Server Communication)
+
+Example Architecture:
+
+## ~~HTTP/2 Push (Server-to-Browser Communication)~~ :skull:	
 
 Developers from Chromium removed the support for this feature due to low usage and high maintenance cost. As Chrome has 70% of market share (2022), they are effectively killing HTTP/2 Push. As HTTP/2 Push is not mandatory, Chromium keeps being HTTP/2 compliant.
 
 Chromium Team announcement (2021): https://groups.google.com/a/chromium.org/g/blink-dev/c/K3rYLvmQUBY/m/0o4J1GEjAgAJ
-
-## Webhooks (Server to Server Communication)
