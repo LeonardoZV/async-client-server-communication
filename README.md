@@ -50,3 +50,9 @@ Example Architecture:
 ## ~~HTTP/2 Push (Server-to-Browser Communication)~~ :skull:	
 
 Developers from Chromium [removed](https://groups.google.com/a/chromium.org/g/blink-dev/c/K3rYLvmQUBY/m/0o4J1GEjAgAJ) in 2021 the support for this feature due to low usage and high maintenance cost. As Chrome has 70% of market share (2022), they are effectively killing HTTP/2 Push. As HTTP/2 Push is not mandatory, Chromium keeps being HTTP/2 compliant.
+
+## Bibliography
+
+https://medium.com/serverless-transformation/asynchronous-client-interaction-in-aws-serverless-polling-websocket-server-sent-events-or-acf10167cc67
+https://aws.amazon.com/pt/blogs/compute/from-poll-to-push-transform-apis-using-amazon-api-gateway-rest-apis-and-websockets/
+http://www.diva-portal.se/smash/get/diva2:1133465/FULLTEXT01.pdf
