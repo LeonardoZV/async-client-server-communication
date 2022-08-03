@@ -33,6 +33,8 @@ This is the only standard and official solution supported by AWS.
 
 Best use cases: Google Wave type of applications, chat applications, anything that needs bi-directional communication.
 
+Performance: As your server could have thousands or millions of open sockets, that could be a problem, but open sockets don't impact too much on CPU usage, being the Memory the main resource used. Here we have a report of a modest server (8 vCPU and 68.4 GiB) taking up to 500k open socket connections.
+
 Example Architecture:
 
 ## HTTP2 Push (Server-to-Browser Communication) :skull:	
