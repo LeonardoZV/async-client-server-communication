@@ -51,7 +51,7 @@ Example Architecture:
 
 1. Source Server publishes the message in a AWS SNS topic.
 2. AWS SNS pushes the message to the destination server by doing one of the fanout methods supported (being HTTP/S POST one of them).
-3. In case of a failure to send the message to the destination and after all retries, the message is published in a SQS queue for the desired error handling.
+3. In case of a failure and after all retries, the message is published in a SQS queue for the desired error handling.
 
 ## ~~HTTP/2 Push (Server-to-Browser Communication)~~ :skull:	
 
